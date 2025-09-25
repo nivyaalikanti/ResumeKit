@@ -1,0 +1,152 @@
+/* Container for the entire Resume Builder page */
+.resume-builder-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Left Panel - The input form section */
+.left-panel {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allows scrolling if content is too long */
+}
+
+/* Left Panel Section Headers */
+.left-panel h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.left-panel h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field styling */
+.input-section {
+  margin-bottom: 2rem;
+}
+
+.input-section input,
+.input-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.input-section label {
+  display: block; /* Make labels take their own line */
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+.input-section input:focus,
+.input-section textarea:focus {
+  border-color: #3267d6;
+  outline: none;
+}
+.input-section h3{
+  background-image: linear-gradient(to right, #0138afbb, #057a2a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent; 
+}
+.input-section textarea {
+  resize: vertical;
+}
+.input-section input[type="number"] {
+    width: calc(100% - 20px); /* Adjust width to fit */
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Right Panel - The A4 resume preview section */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* A4 Page Styling */
+.a4-page {
+  width: 21cm;
+  min-height: 29.7cm;
+  background-color: #ffffff;
+  /* padding: 2.5cm;  REMOVE or comment this line out */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  color: #333;
+  /* Add box-sizing to ensure padding works correctly with fixed width */
+  box-sizing: border-box;
+}
+
+/* Resume content styling */
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+
+.resume-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.resume-section h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-section p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.resume-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Download button styling */
+.download-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #3267d6, #00b4d8);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
